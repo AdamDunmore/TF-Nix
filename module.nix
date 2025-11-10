@@ -1,4 +1,4 @@
-{ config, lib }:
+{ config, lib, ... }:
 let
     cfg = config.programs.tf2;
     inherit (lib) mkIf;
