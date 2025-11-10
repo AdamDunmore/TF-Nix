@@ -6,13 +6,12 @@
         home-manager.inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    outputs = { config, ... } @inputs: {
+    outputs = { ... } @inputs: {
         homeManagerModules.default = {
             imports = [
                 ./options.nix
+                ./default.nix
             ];
-
-            home.file.${config.tf2.path}.text = config.tf2.config;
         };
     };
 }
