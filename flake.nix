@@ -10,7 +10,7 @@
         homeManagerModules.default = {
             imports = [
                 ./options.nix
-                ./default.nix
+                ./module.nix
             ];
         };
     };
